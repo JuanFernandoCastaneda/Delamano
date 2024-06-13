@@ -1,0 +1,63 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed May 15 12:27:53 2024\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: Game.Levels.Equivalencias.L01_hello
+msgid "Playground"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L01_hello
+msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L01_hello
+msgid "\n"
+"The message shown when the level is completed\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L01_hello
+msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
+"\n"
+"Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.Equivalencias
+msgid "Equivalencias"
+msgstr ""
+
+#: Game.Levels.Equivalencias
+msgid "\n"
+"This introduction text is shown when one first enters a world.\n"
+""
+msgstr ""
+
+#: Game
+msgid "Asistente de pruebas FMC"
+msgstr ""
+
+#: Game
+msgid "\n"
+"Falta introducción. Por ahora, >:]\n"
+""
+msgstr ""
+
+#: Game
+msgid "\n"
+"MÁS POR COMPLETAR\n"
+""
+msgstr ""
+
+#: Game
+msgid "Game Template"
+msgstr ""
+
+#: Game
+msgid "You should use this game as a template for your own game and add your own levels."
+msgstr ""
