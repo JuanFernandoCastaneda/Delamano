@@ -131,25 +131,20 @@ function LandingPage() {
   // Then load all these games in
   //
   let allGames = [
-    "leanprover-community/nng4",
-    "hhu-adam/robo",
-    "djvelleman/stg4",
-    "miguelmarco/stg4",
-    "trequetrum/lean4game-logic",
+    // "local/my-game", ASÍ PONDRÍA ESTA VAINA SI TUVIERA algo en la carpeta junto a la carpeta de lean4game.
+    "juancastaneda/my-game"
   ]
   let allTiles = allGames.map((gameId) => (useGetGameInfoQuery({game: `g/${gameId}`}).data?.tile))
 
   return <div className="landing-page">
     <header style={{backgroundImage: `url(${bgImage})`}}>
       <nav>
-        <GithubIcon url="https://github.com/leanprover-community/lean4game"/>
+        <GithubIcon url="https://github.com/JuanFernandoCastaneda/COld"/>
       </nav>
       <div id="main-title">
-        <h1>Lean Game Server</h1>
+        <h1>Nombre chulito</h1>
         <p>
-          A repository of learning games for the
-          proof assistant <a target="_blank" href="https://leanprover-community.github.io/">Lean</a> <i>(Lean 4)</i> and
-          its mathematical library <a target="_blank" href="https://github.com/leanprover-community/mathlib4">mathlib</a>
+          Software asistente de pruebas matemáticas basado en <a target="_blank" href="https://leanprover-community.github.io/">Lean</a> <i>(Lean 4)</i> y su librería matemática <a target="_blank" href="https://github.com/leanprover-community/mathlib4">mathlib</a>
         </p>
       </div>
     </header>
@@ -167,6 +162,7 @@ function LandingPage() {
         ))
       }
     </div>
+    {/* 
     <section>
       <div className="wrapper">
         <h2>Development notes</h2>
@@ -182,34 +178,12 @@ function LandingPage() {
         </p>
       </div>
     </section>
+    */}
     <section>
       <div className="wrapper">
-        <h2>Adding new games</h2>
+        <h2>Project development</h2>
         <p>
-          If you are considering writing your own game, you should use
-          the <a target="_blank" href="https://github.com/hhu-adam/GameSkeleton">GameSkeleton Github Repo</a> as
-          a template and read <a target="_blank" href="https://github.com/leanprover-community/lean4game/">How to Create a Game</a>.
-        </p>
-        <p>
-          You can directly load your games into the server and play it using
-          the correct URL. The <a target="_blank" href="https://github.com/leanprover-community/lean4game/">instructions above</a> also
-          explain the details for how to load your game to the server.
-
-          We'd like to encourage you to contact us if you have any questions.
-        </p>
-        <p>
-          Featured games on this page are added manually.
-          Please get in contact and we-ll happily add yours.
-        </p>
-      </div>
-    </section>
-    <section>
-      <div className="wrapper">
-        <h2>Funding</h2>
-        <p>
-          This server has been developed as part of the
-          project <a target="_blank" href="https://hhu-adam.github.io">ADAM : Anticipating the Digital Age of Mathematics</a> at
-          Heinrich-Heine-Universität in Düsseldorf.
+          This project uses <a target="_blank" href='https://adam.math.hhu.de'>Lean Game Server</a> at its core. A server developed as part of the project <a target="_blank" href="https://hhu-adam.github.io">ADAM : Anticipating the Digital Age of Mathematics</a> at Heinrich-Heine-Universität in Düsseldorf.
         </p>
       </div>
     </section>

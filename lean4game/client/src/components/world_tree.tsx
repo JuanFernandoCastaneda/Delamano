@@ -90,7 +90,7 @@ export function LevelIcon({ world, level, position, completed, unlocked, worldSi
   return (
     <Link to={levelDisabled ? '' : `/${gameId}/world/${world}/level/${level == 1 ? 0 : level}`}
         className={`level${levelDisabled ? ' disabled' : ''}`}>
-      <circle fill={completed ? lightgreen : unlocked? blue : lightgrey} cx={x} cy={y} r={r} />
+      <circle fill={completed ? blue : unlocked? lightgreen : lightgrey} cx={x} cy={y} r={r} />
       <foreignObject className="level-title-wrapper" x={x} y={y}
           width={1.42*r} height={1.42*r} transform={"translate("+ -.71*r +","+ -.71*r +")"}>
         <div>
@@ -141,7 +141,7 @@ export function WorldIcon({world, title, position, completedLevels, difficulty, 
       to={playable ? `/${gameId}/world/${world}/level/${nextLevel}` : ''}
       className={playable ? '' : 'disabled'}>
     <circle className="world-circle" cx={s*position.x} cy={s*position.y} r={R}
-        fill={completed ? green : unlocked ? blue : grey}/>
+        fill={completed ? blue : unlocked ? green : grey}/>
     { false ? // fontSize >= MINFONT ?
       // NOTE: This code would display the world names inside the bubble, but currently
       //       it isn't used.
@@ -159,7 +159,7 @@ export function WorldIcon({world, title, position, completedLevels, difficulty, 
       <foreignObject x={s*position.x - 75} y={s*position.y + labelOffset}
           width='150px' height='2em' style={{overflow: 'visible'}}
           >
-        <div className='world-label' style={{backgroundColor: completed ? darkgreen : unlocked ? darkblue : darkgrey}}>
+        <div className='world-label' style={{backgroundColor: completed ? darkblue : unlocked ? darkgreen : darkgrey}}>
           <p className='world-title' style={{fontSize: MINFONT + "px"}}>
             {title ? title : world}
           </p>

@@ -20,7 +20,7 @@ function MobileNavButtons({pageNumber, setPageNumber}:
     setPageNumber: any}) {
   const gameId = React.useContext(GameIdContext)
   const dispatch = useAppDispatch()
-
+// ESTOS SON LOS BOTONES DE CUANDO UNO ELIGE MUNDO.
   // if `prevText` or `prevIcon` is set, show a button to go back
   let prevText  = {0: null, 1: "Intro", 2: null}[pageNumber]
   let prevIcon  = {0: null, 1: null, 2: faBookOpen}[pageNumber]
@@ -70,11 +70,11 @@ function NextButton({worldSize, difficulty, completed, setNavOpen}) {
         to={`/${gameId}/world/${worldId}/level/${levelId + 1}`} title="next level"
         disabled={difficulty >= 2 && !(completed || levelId == 0)}
         onClick={() => setNavOpen(false)}>
-      <FontAwesomeIcon icon={faArrowRight} />&nbsp;{levelId ? "Next" : "Start"}
+      <FontAwesomeIcon icon={faArrowRight} />&nbsp;{levelId ? "Siguiente ejercicio" : "Empezar"}
     </Button>
     :
     <Button to={`/${gameId}`} inverted="true" title="back to world selection" id="home-btn">
-      <FontAwesomeIcon icon={faHome} />&nbsp;Leave World
+      <FontAwesomeIcon icon={faHome} />&nbsp;Elegir tema
     </Button>
   )
 }
@@ -90,7 +90,7 @@ function PreviousButton({setNavOpen}) {
         to={`/${gameId}/world/${worldId}/level/${levelId - 1}`}
         title="previous level"
         onClick={() => setNavOpen(false)}>
-      <FontAwesomeIcon icon={faArrowLeft} />&nbsp;Previous
+      <FontAwesomeIcon icon={faArrowLeft} />&nbsp;Ejercicio anterior
     </Button>
   </>)
 }
@@ -132,7 +132,7 @@ function HomeButton({isDropdown}) {
   const gameId = React.useContext(GameIdContext)
   return <Button to={`/${gameId}`} inverted="true" title="back to world selection" id="home-btn">
     <FontAwesomeIcon icon={faHome} />
-    {isDropdown && <>&nbsp;Home</>}
+    {isDropdown && <>&nbsp;Inicio</>}
   </Button>
 }
 
@@ -243,7 +243,7 @@ export function LevelAppBar({isLoading, levelTitle, toggleImpressum, pageNumber=
         {/* DESKTOP VERSION */}
         <div className='app-bar-left'>
           <HomeButton isDropdown={false} />
-          <span className="app-bar-title">{worldTitle && `World: ${worldTitle}`}</span>
+          <span className="app-bar-title">{worldTitle && `Tema: ${worldTitle}`}</span>
         </div>
         <div>
           <span className="app-bar-title">{levelTitle}</span>

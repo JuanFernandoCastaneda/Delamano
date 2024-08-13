@@ -439,7 +439,7 @@ function IntroductionPanel({gameInfo}) {
       {gameInfo.data?.worldSize[worldId] == 0 ?
         <Button to={`/${gameId}`}><FontAwesomeIcon icon={faHome} /></Button> :
         <Button to={`/${gameId}/world/${worldId}/level/1`}>
-          Start&nbsp;<FontAwesomeIcon icon={faArrowRight} />
+          Empezar&nbsp;<FontAwesomeIcon icon={faArrowRight} />
         </Button>
       }
     </div>
@@ -467,7 +467,7 @@ function Introduction({impressum, setImpressum}) {
   }
 
   return <>
-    <LevelAppBar isLoading={gameInfo.isLoading} levelTitle="Introduction" toggleImpressum={toggleImpressum}/>
+    <LevelAppBar isLoading={gameInfo.isLoading} levelTitle="Introducción" toggleImpressum={toggleImpressum}/>
     {gameInfo.isLoading ?
       <div className="app-content loading"><CircularProgress /></div>
     : mobile ?
