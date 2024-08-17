@@ -1,31 +1,45 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Wed May 15 12:27:53 2024\n"
+"POT-Creation-Date: Fri Aug 16 22:26:33 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit"
 
-#: Game.Levels.Equivalencias.L01_hello
+#: Game.Levels.Equivalencias.L1
 msgid "Playground"
 msgstr ""
 
-#: Game.Levels.Equivalencias.L01_hello
+#: Game.Levels.Equivalencias.L1
 msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
 msgstr ""
 
-#: Game.Levels.Equivalencias.L01_hello
+#: Game.Levels.Equivalencias.L1
 msgid "\n"
 "The message shown when the level is completed\n"
 ""
 msgstr ""
 
-#: Game.Levels.Equivalencias.L01_hello
+#: Game.Levels.Equivalencias.L1
 msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
 "\n"
 "Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.Equivalencias.L3
+msgid "Ejercicio 3"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L3
+msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L3
+msgid "\n"
+"The message shown when the level is completed\n"
+""
 msgstr ""
 
 #: Game.Levels.Equivalencias

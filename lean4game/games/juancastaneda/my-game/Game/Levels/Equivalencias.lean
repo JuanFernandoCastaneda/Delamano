@@ -1,4 +1,4 @@
-import Game.Levels.Equivalencias.L01_hello
+import Game.Levels.Equivalencias.L3
 
 World "Equivalencias"
 Title "Equivalencias"
