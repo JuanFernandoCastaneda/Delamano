@@ -37,7 +37,7 @@ import { store } from '../../state/store';
 import { Hints, MoreHelpButton, filterHints } from '../hints';
 import { DocumentPosition } from '../../../../node_modules/lean4-infoview/src/infoview/util';
 import { DiagnosticSeverity } from 'vscode-languageclient';
-import { transformar_respuesta_editor } from './helper_functions';
+import { transformar_respuesta_editor } from '../../helper_functions';
 
 /** Wrapper for the two editors. It is important that the `div` with `codeViewRef` is
  * always present, or the monaco editor cannot start.

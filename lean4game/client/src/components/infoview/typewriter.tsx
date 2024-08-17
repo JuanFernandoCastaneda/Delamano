@@ -20,7 +20,7 @@ import { RpcContext } from '../../../../node_modules/lean4-infoview/src/infoview
 import { DeletedChatContext, InputModeContext, MonacoEditorContext, ProofContext } from './context'
 import { goalsToString, lastStepHasErrors, loadGoals } from './goals'
 import { GameHint, ProofState } from './rpc_api'
-import { transformar_input_usuario, transformar_respuesta_editor } from './helper_functions'
+import { transformar_input_usuario, transformar_respuesta_editor } from '../../helper_functions'
 
 export interface GameDiagnosticsParams {
   uri: DocumentUri;

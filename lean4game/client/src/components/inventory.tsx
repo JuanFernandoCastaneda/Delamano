@@ -11,7 +11,7 @@ import { selectDifficulty, selectInventory } from '../state/progress';
 import { store } from '../state/store';
 import { useSelector } from 'react-redux';
 import { InputModeContext } from './infoview/context';
-import { extraer_hipotesis_altTitle } from './infoview/helper_functions';
+import { extraer_hipotesis_altTitle } from '../helper_functions';
 
 export function Inventory({levelInfo, openDoc, lemmaTab, setLemmaTab, enableAll=false} :
   {
@@ -32,10 +32,12 @@ export function Inventory({levelInfo, openDoc, lemmaTab, setLemmaTab, enableAll=
         <InventoryList items={levelInfo?.tactics} docType="Tactic" openDoc={openDoc} enableAll={enableAll}/>
       }
       */}
+      {/*
       <h2>Definiciones</h2>
       {levelInfo?.definitions &&
         <InventoryList items={levelInfo?.definitions} docType="Definition" openDoc={openDoc} enableAll={enableAll} />
       }
+      */}
       <h2>Teoremas</h2>
       {levelInfo?.lemmas &&
         <InventoryList items={levelInfo?.lemmas} docType="Lemma" openDoc={openDoc} level={levelInfo} enableAll={enableAll} tab={lemmaTab} setTab={setLemmaTab}/>
