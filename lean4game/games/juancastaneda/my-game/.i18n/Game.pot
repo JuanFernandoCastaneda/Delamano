@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Fri Aug 16 22:26:33 2024\n"
+"POT-Creation-Date: Sat Aug 17 10:25:03 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -20,6 +20,102 @@ msgstr ""
 msgid "\n"
 "The message shown when the level is completed\n"
 ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
 msgstr ""
 
 #: Game.Levels.Equivalencias.L1
