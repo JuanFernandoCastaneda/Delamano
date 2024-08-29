@@ -1,9 +1,41 @@
-export function transformar_input_usuario(input_usuario: string): string {
-  let [comando, posicion] = input_usuario.split(";")
+const reg_simple = /^[a-zA-Z_]+$/
+const reg_pos = /^[a-zA-Z_]+\spos\s[1-9]+$/
+const reg_props = /^[a-zA-Z_]+(\s[a-zA-Z]+)+$/
+const reg_modif = /^modificar_hipotesis/
+
+// retorna arreglo de strings.
+export function transformar_input_usuario(input_usuario: string, es_equivalencia: boolean) {
+  const lista_inputs = input_usuario.split(";")
+  const comandos_a_ejecutar = []
+  lista_inputs.forEach((value, index) => {
+    const input = value.trim()
+    if(!reg_simple.test(input) && !reg_pos.test(input) && !reg_props.test(input)) {
+      throw new Error("Hay un error en el comando "+ index + ": " + input)
+    } else if(reg_modif.test(input) && es_equivalencia) {
+      throw new Error("Estás utilizando el comando modificar_hipotesis en una equivalencia")
+    }
+    comandos_a_ejecutar.push(transformar_input_usuario_2(input))
+  })
+  return comandos_a_ejecutar
+}
+
+function transformar_en_inferencia() {
+
+}
+
+function transformar_en_equivalencia() {
+
+}
+
+export function transformar_input_usuario_2(input_usuario: string): string {
   let texto = "rw ";
-  // Esto pasa si no se especifica la posición, del tipo comando; pos vs comando solo.
-  if (posicion != undefined) {
-    texto += `(config := {occs := .pos [${parseInt(posicion)}]})`
+  let comando = input_usuario
+  if (reg_pos.test(input_usuario)) {
+    let palabras = input_usuario.split(" ")
+    const posicion = parseInt(palabras[2])
+    texto += `(config := {occs := .pos [${posicion}]})`
+    palabras.splice(2, 1);
+    comando = palabras.join(" ")
   }
   texto += "[" + comando.trim() + "]" + "\n"
   return texto

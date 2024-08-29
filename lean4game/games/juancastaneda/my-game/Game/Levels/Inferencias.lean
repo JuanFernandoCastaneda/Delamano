@@ -1,8 +1,7 @@
-import Game.Levels.Equivalencias.L3
+import Game.Levels.Inferencias.L1
 
-
-World "Equivalencias"
-Title "Equivalencias"
+World "Inferencias"
+Title "Inferencias"
 
 Introduction
 "

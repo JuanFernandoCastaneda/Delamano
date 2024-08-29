@@ -4,7 +4,7 @@ import Mathlib.Util.Delaborators
 
 World "Equivalencias"
 Level 1
-Title "Playground"
+Title "Ejercicio 1"
 
 Introduction "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
 

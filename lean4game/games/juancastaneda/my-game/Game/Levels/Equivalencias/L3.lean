@@ -1,4 +1,4 @@
-import Game.Levels.Equivalencias.L1
+import Game.Levels.Equivalencias.L2
 
 World "Equivalencias"
 Level 3
@@ -9,3 +9,6 @@ Introduction "A la derecha están las propiedades que puedes usar. Para ver qué
 Conclusion "
 The message shown when the level is completed
 "
+
+Statement (p q : Prop): p → q ∧ r ↔ (p → q) ∧ (p → r) := by
+  sorry
