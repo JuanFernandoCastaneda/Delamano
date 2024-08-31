@@ -1,6 +1,5 @@
 import Game.Levels.Equivalencias.L3
 
-
 World "Equivalencias"
 Title "Equivalencias"
 

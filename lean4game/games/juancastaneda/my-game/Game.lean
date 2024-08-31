@@ -1,5 +1,4 @@
 import Game.Levels.Equivalencias
-import Game.Levels.Inferencias
 
 -- Here's what we'll put on the title screen
 Title "Asistente de pruebas FMC"

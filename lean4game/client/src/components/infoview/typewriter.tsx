@@ -195,24 +195,19 @@ export function Typewriter({disabled}: {disabled?: boolean}) {
     // TODO: Desired logic is to only reset this after a new *error-free* command has been entered
     setDeletedChat([])
 
-    let pos = editor.getPosition()
+    const pos = editor.getPosition()
     if (typewriterInput) {
       setProcessing(true)
-      const lista_comandos = transformar_input_usuario(typewriterInput, true)
-      lista_comandos.forEach((comando) => {
-        editor.executeEdits("typewriter", [{
-          range: monaco.Selection.fromPositions(
-            pos,
-            editor.getModel().getFullModelRange().getEndPosition()
-          ),
-          /* AQUÍ ANTES SOLO ESTABA TYPWRITERINPUT+\n, pero pues como
-        quise quitar la necesidad de escribir la táctica, ajam. */
-          text: comando,
-          forceMoveMarkers: false
-        }])
-        pos = editor.getPosition()
-      })
-
+      editor.executeEdits("typewriter", [{
+        range: monaco.Selection.fromPositions(
+          pos,
+          editor.getModel().getFullModelRange().getEndPosition()
+        ),
+        /* AQUÍ ANTES SOLO ESTABA TYPWRITERINPUT+\n, pero pues como
+      quise quitar la necesidad de escribir la táctica, ajam. */
+        text: transformar_input_usuario(typewriterInput),
+        forceMoveMarkers: false
+      }])
       setTypewriterInput('')
       // Load proof after executing edits
       loadGoals(rpcSess, uri, setProof, setCrashed)
@@ -327,13 +322,11 @@ export function Typewriter({disabled}: {disabled?: boolean}) {
     return () => { l.dispose() }
   }, [oneLineEditor, setTypewriterInput])
 
-  // IMPORTANTE
   useEffect(() => {
     if (!oneLineEditor) return
     // Run command when pressing enter
     const l = oneLineEditor.onKeyUp((ev) => {
       if (ev.code === "Enter") {
-
         runCommand()
       }
     })
