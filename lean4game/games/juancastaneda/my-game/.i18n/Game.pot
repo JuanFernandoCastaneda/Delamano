@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Aug 17 10:25:03 2024\n"
+"POT-Creation-Date: Thu Sep  5 10:58:31 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -122,6 +122,20 @@ msgstr ""
 msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
 "\n"
 "Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.Equivalencias.L2
+msgid "Ejercicio 2"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L2
+msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L2
+msgid "\n"
+"The message shown when the level is completed\n"
+""
 msgstr ""
 
 #: Game.Levels.Equivalencias.L3

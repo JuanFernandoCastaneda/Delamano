@@ -13,6 +13,7 @@ import Markdown from './markdown';
 import {PrivacyPolicyPopup} from './popup/privacy_policy'
 import { GameTile, useGetGameInfoQuery } from '../state/api'
 import path from 'path';
+import { IconButton } from '@mui/material';
 
 const flag = {
   'Dutch': '🇳🇱',
@@ -140,6 +141,9 @@ function LandingPage() {
     <header style={{backgroundImage: `url(${bgImage})`}}>
       <nav>
         <GithubIcon url="https://github.com/JuanFernandoCastaneda/COld"/>
+        <a className="link" href="https://flaglab.github.io/">
+          <img src="/client/public/flag-logo-inverted.png" height="20rem" />
+        </a>
       </nav>
       <div id="main-title">
         <h1>Nombre chulito</h1>
@@ -190,6 +194,10 @@ function LandingPage() {
     <footer>
       <a className="link" onClick={openImpressum}>Impressum</a>
       {impressum? <PrivacyPolicyPopup handleClose={closeImpressum} />: null}
+      <a className="link" href="https://sistemas.uniandes.edu.co/">Departamento de Ingeniería de Sistemas y Computación Uniandes</a>
+      <a className="link" href='https://uniandes.edu.co/'>
+        <img src="/client/public/logo-uniandes_1.png" height="40rem" />
+      </a> 
     </footer>
   </div>
 
