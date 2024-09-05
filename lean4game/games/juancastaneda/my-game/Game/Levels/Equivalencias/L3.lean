@@ -1,4 +1,4 @@
-import Game.Levels.Equivalencias.L1
+import Game.Levels.Equivalencias.L2
 
 World "Equivalencias"
 Level 3
