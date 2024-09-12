@@ -140,10 +140,10 @@ function LandingPage() {
   return <div className="landing-page">
     <header style={{backgroundImage: `url(${bgImage})`}}>
       <nav>
-        <GithubIcon url="https://github.com/JuanFernandoCastaneda/COld"/>
         <a className="link" href="https://flaglab.github.io/">
           <img src="/client/public/flag-logo-inverted.png" height="20rem" />
         </a>
+        <GithubIcon url="https://github.com/JuanFernandoCastaneda/COld"/>
       </nav>
       <div id="main-title">
         <h1>Nombre chulito</h1>
@@ -166,7 +166,7 @@ function LandingPage() {
         ))
       }
     </div>
-    {/* 
+    {/*
     <section>
       <div className="wrapper">
         <h2>Development notes</h2>
@@ -197,7 +197,7 @@ function LandingPage() {
       <a className="link" href="https://sistemas.uniandes.edu.co/">Departamento de Ingeniería de Sistemas y Computación Uniandes</a>
       <a className="link" href='https://uniandes.edu.co/'>
         <img src="/client/public/logo-uniandes_1.png" height="40rem" />
-      </a> 
+      </a>
     </footer>
   </div>
 

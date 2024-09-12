@@ -169,11 +169,17 @@ header nav {
   background-color: rgba(0, 133, 162, .7);
 }
 
+header nav > * {
+  margin-left: 20px;
+  padding: 1px;
+}
+
 footer {
   background-color: rgba(0, 133, 162, 1);
-  /* display: flex;
+  display: flex;
   flex-direction: row;
-  justify-content: flex-end; */
+  justify-content: center;
+  flex-wrap: wrap;
   padding: 20px;
 }
 
@@ -182,6 +188,14 @@ footer .link {
   cursor: pointer;
   margin-left: 40px;
   margin-right: 40px;
+  min-width: fit-content;
+ text-align: center;
+}
+
+@media (max-width:960px) {
+  footer .link {
+    padding: 10px;
+  }
 }
 
 .github-link {
