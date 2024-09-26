@@ -1,7 +1,7 @@
 msgid ""
 msgstr "Project-Id-Version: Game v4.6.0\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: Sat Sep 14 21:32:46 2024\n"
+"POT-Creation-Date: Thu Sep 26 16:36:36 2024\n"
 "Last-Translator: \n"
 "Language-Team: none\n"
 "Language: en\n"
@@ -9,16 +9,33 @@ msgstr "Project-Id-Version: Game v4.6.0\n"
 "Content-Transfer-Encoding: 8bit"
 
 #: Game.Levels.Equivalencias.L1
-msgid "Playground"
-msgstr ""
-
-#: Game.Levels.Equivalencias.L1
-msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgid "Ejercicio 1"
 msgstr ""
 
 #: Game.Levels.Equivalencias.L1
 msgid "\n"
-"The message shown when the level is completed\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son:\n"
+"\n"
+"'¬' = '\neg'\n"
+"\n"
+"'∨' = '\or'\n"
+"\n"
+"'∧' = '\and'\n"
+"\n"
+"'→' = '\r'\n"
+"\n"
+"'↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid "\n"
 ""
 msgstr ""
 
@@ -129,13 +146,29 @@ msgid "Ejercicio 2"
 msgstr ""
 
 #: Game.Levels.Equivalencias.L2
-msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgid "\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son:\n"
+"\n"
+"'¬' = '\neg'\n"
+"\n"
+"'∨' = '\or'\n"
+"\n"
+"'∧' = '\and'\n"
+"\n"
+"'→' = '\r'\n"
+"\n"
+"'↔' = '\lr'.\n"
+""
 msgstr ""
 
 #: Game.Levels.Equivalencias.L2
-msgid "\n"
-"The message shown when the level is completed\n"
-""
+msgid ""
 msgstr ""
 
 #: Game.Levels.Equivalencias.L3
@@ -143,12 +176,29 @@ msgid "Ejercicio 3"
 msgstr ""
 
 #: Game.Levels.Equivalencias.L3
-msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgid "\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son:\n"
+"\n"
+"'¬' = '\neg'\n"
+"\n"
+"'∨' = '\or'\n"
+"\n"
+"'∧' = '\and'\n"
+"\n"
+"'→' = '\r'\n"
+"\n"
+"'↔' = '\lr'.\n"
+""
 msgstr ""
 
 #: Game.Levels.Equivalencias.L3
 msgid "\n"
-"The message shown when the level is completed\n"
 ""
 msgstr ""
 
@@ -158,31 +208,23 @@ msgstr ""
 
 #: Game.Levels.Equivalencias
 msgid "\n"
-"This introduction text is shown when one first enters a world.\n"
-""
-msgstr ""
-
-#: Game.Levels.TeoriaNums.L1
-msgid "Ejercicio 1"
-msgstr ""
-
-#: Game.Levels.TeoriaNums.L1
-msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
-msgstr ""
-
-#: Game.Levels.TeoriaNums.L1
-msgid "\n"
-"The message shown when the level is completed\n"
-""
-msgstr ""
-
-#: Game.Levels.TeoriaNums
-msgid "Teoría de números"
-msgstr ""
-
-#: Game.Levels.TeoriaNums
-msgid "\n"
-"This introduction text is shown when one first enters a world.\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son:\n"
+"\n"
+"'¬' = '\neg'\n"
+"\n"
+"'∨' = '\or'\n"
+"\n"
+"'∧' = '\and'\n"
+"\n"
+"'→' = '\r'\n"
+"\n"
+"'↔' = '\lr'.\n"
 ""
 msgstr ""
 
@@ -192,20 +234,16 @@ msgstr ""
 
 #: Game
 msgid "\n"
-"Falta introducción. Por ahora, >:]\n"
+"Este asistente te puede ayudar a resolver ejercicios de FMC por tu cuenta, sobre todo verificando que lo que estás haciendo está bien.\n"
+"\n"
+"En la mitad de la pantalla encontrarás "Mundos". Actualmente solo existe el de equivalencias, pero la idea es eventualmente agregar más, cada uno con temas nuevos.\n"
+"\n"
+"Dale clic a las bolitas verdes que aparecen. Esas te llevarán a la introducción del mundo, y eventualmente a los ejercicios.\n"
 ""
 msgstr ""
 
 #: Game
 msgid "\n"
-"MÁS POR COMPLETAR\n"
+"\n"
 ""
-msgstr ""
-
-#: Game
-msgid "Game Template"
-msgstr ""
-
-#: Game
-msgid "You should use this game as a template for your own game and add your own levels."
 msgstr ""

@@ -171,7 +171,7 @@ def completionDiagnostics (goalCount : Nat) (prevGoalCount : Nat) (completed : B
   if goalCount == 0 then
     if completed then
       out := out.push {
-        message := .text "level completed! 🎉"
+        message := .text "¡nivel completado! 🎉"
         range := {
           start := pos
           «end» := pos

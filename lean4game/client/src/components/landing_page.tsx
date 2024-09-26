@@ -57,19 +57,19 @@ function Tile({gameId, data}: {gameId: string, data: GameTile|undefined}) {
     <table className="info">
       <tbody>
       <tr>
-        <td title="consider playing these games first.">Prerequisites</td>
+        <td title="consider playing these games first.">Prerrequisitos</td>
         <td><Markdown>{data.prerequisites.join(', ')}</Markdown></td>
       </tr>
       <tr>
-        <td>Worlds</td>
+        <td>Cantidad de mundos</td>
         <td>{data.worlds}</td>
       </tr>
       <tr>
-        <td>Levels</td>
+        <td>Ejercicios</td>
         <td>{data.levels}</td>
       </tr>
       <tr>
-        <td>Language</td>
+        <td>Idioma</td>
         <td title={`in ${data.languages.join(', ')}`}>{data.languages.map((lan) => flag[lan]).join(', ')}</td>
       </tr>
       </tbody>
@@ -146,7 +146,7 @@ function LandingPage() {
         <GithubIcon url="https://github.com/JuanFernandoCastaneda/COld"/>
       </nav>
       <div id="main-title">
-        <h1>Nombre chulito</h1>
+        <h1>Delamano</h1>
         <p>
           Software asistente de pruebas matemáticas basado en <a target="_blank" href="https://leanprover-community.github.io/">Lean</a> <i>(Lean 4)</i> y su librería matemática <a target="_blank" href="https://github.com/leanprover-community/mathlib4">mathlib</a>
         </p>
@@ -185,15 +185,15 @@ function LandingPage() {
     */}
     <section>
       <div className="wrapper">
-        <h2>Project development</h2>
+        <h2>Desarrollo del proyecto</h2>
         <p>
-          This project uses <a target="_blank" href='https://adam.math.hhu.de'>Lean Game Server</a> at its core. A server developed as part of the project <a target="_blank" href="https://hhu-adam.github.io">ADAM : Anticipating the Digital Age of Mathematics</a> at Heinrich-Heine-Universität in Düsseldorf.
+          Este proyecto usa <a target="_blank" href='https://adam.math.hhu.de'>Lean Game Server</a> como base. Un servidor desarrollado como parte del proyecto <a target="_blank" href="https://hhu-adam.github.io">ADAM : Anticipating the Digital Age of Mathematics</a> de la Heinrich-Heine-Universität in Düsseldorf.
         </p>
       </div>
     </section>
     <footer>
-      <a className="link" onClick={openImpressum}>Impressum</a>
-      {impressum? <PrivacyPolicyPopup handleClose={closeImpressum} />: null}
+      {/* <a className="link" onClick={openImpressum}>Impressum</a>
+      {impressum? <PrivacyPolicyPopup handleClose={closeImpressum} />: null} */}
       <a className="link" href="https://sistemas.uniandes.edu.co/">Departamento de Ingeniería de Sistemas y Computación Uniandes</a>
       <a className="link" href='https://uniandes.edu.co/'>
         <img src="./logo-uniandes_1.png" height="40rem" />

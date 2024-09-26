@@ -145,3 +145,11 @@ em {
 .privacy-policy {
   z-index: 10;
 }
+
+.nav-btns-juego {
+  display: flex;
+}
+
+.nav-btns-juego > a {
+  margin-right: 1em;
+}

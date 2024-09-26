@@ -1,7 +1,9 @@
 import Game.Levels.Equivalencias.L3
 
 World "Equivalencias"
-Title "Equivalencias"
+Level 4
+Title "Ejercicio 4"
+
 
 Introduction
 "
@@ -23,3 +25,9 @@ Por último, otros comandos que pueden llegar a ser útiles son:
 
 '↔' = '\\lr'.
 "
+
+Conclusion "
+"
+
+Statement (p q : Prop): p → (q ∧ r) ↔ (p → q) ∧ (p → r) := by
+  sorry

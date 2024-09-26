@@ -236,7 +236,7 @@ export function Main(props: { world: string, level: number, data: LevelInfo}) {
     ret = <div className="infoview vscode-light">
       {proof?.completedWithWarnings &&
         <div className="level-completed">
-          {proof?.completed ? "Level completed! 🎉" : "Level completed with warnings 🎭"}
+          {proof?.completed ? "¡Nivel completado! 🎉" : "Nivel completado con advertencias 🎭"}
         </div>
       }
       <Infos />
@@ -580,7 +580,7 @@ export function TypewriterInterface({props}) {
               <div className="button-row mobile">
                 {props.level >= props.worldSize ?
                   <Button to={`/${gameId}`}>
-                    <FontAwesomeIcon icon={faHome} />&nbsp;Leave World
+                    <FontAwesomeIcon icon={faHome} />&nbsp;Dejar mundo
                   </Button>
                 :
                   <Button to={`/${gameId}/world/${props.world}/level/${props.level + 1}`}>

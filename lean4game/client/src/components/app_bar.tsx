@@ -22,13 +22,13 @@ function MobileNavButtons({pageNumber, setPageNumber}:
   const dispatch = useAppDispatch()
 // ESTOS SON LOS BOTONES DE CUANDO UNO ELIGE MUNDO.
   // if `prevText` or `prevIcon` is set, show a button to go back
-  let prevText  = {0: null, 1: "Intro", 2: null}[pageNumber]
+  let prevText  = {0: null, 1: "Introducción", 2: null}[pageNumber]
   let prevIcon  = {0: null, 1: null, 2: faBookOpen}[pageNumber]
-  let prevTitle = {0: null, 1: "Game Introduction", 2: "World selection"}[pageNumber]
+  let prevTitle = {0: null, 1: "Introducción del juego", 2: "Selección de mundo"}[pageNumber]
   // if `nextText` or `nextIcon` is set, show a button to go forward
-  let nextText  = {0: "Start", 1: null, 2: null}[pageNumber]
+  let nextText  = {0: "Inicio", 1: null, 2: null}[pageNumber]
   let nextIcon  = {0: null, 1: faBook, 2: null}[pageNumber]
-  let nextTitle = {0: "World selection", 1: "Inventory", 2: null}[pageNumber]
+  let nextTitle = {0: "Selección de mundo", 1: "Inventario", 2: null}[pageNumber]
 
   return <>
     {(prevText || prevIcon) &&
@@ -167,7 +167,7 @@ export function WelcomeAppBar({pageNumber, setPageNumber, gameInfo, toggleImpres
 
   return <div className="app-bar">
     <div className='app-bar-left'>
-      <Button inverted="false" title="back to games selection" to="/">
+      <Button inverted="false" title="devolverse a seleccionar un juego" to="/">
         <FontAwesomeIcon icon={faArrowLeft} />&nbsp;<FontAwesomeIcon icon={faGlobe} />
       </Button>
       <span className="app-bar-title"></span>
@@ -175,29 +175,34 @@ export function WelcomeAppBar({pageNumber, setPageNumber, gameInfo, toggleImpres
     <div>
       {!mobile && <span className="app-bar-title">{gameInfo?.title}</span>}
     </div>
-    <div className="nav-btns">
+    <div className="nav-btns nav-btns-juego">
       {mobile && <MobileNavButtons pageNumber={pageNumber} setPageNumber={setPageNumber} />}
+      <a className="link" href="https://flaglab.github.io/">
+        <img src="./flag-logo-inverted.png" height="26rem" />
+      </a>
       <MenuButton navOpen={navOpen} setNavOpen={setNavOpen} />
     </div>
     <div className={'menu dropdown' + (navOpen ? '' : ' hidden')}>
-      <Button title="Game Info & Credits" inverted="true" to="" onClick={() => {toggleInfo(); setNavOpen(false)}}>
-        <FontAwesomeIcon icon={faCircleInfo} />&nbsp;Game Info
+      <Button title="Información del juego y créditos" inverted="true" to="" onClick={() => {toggleInfo(); setNavOpen(false)}}>
+        <FontAwesomeIcon icon={faCircleInfo} />&nbsp;Información del juego
       </Button>
-      <Button title="Clear Progress" inverted="true" to="" onClick={() => {toggleEraseMenu(); setNavOpen(false)}}>
-        <FontAwesomeIcon icon={faEraser} />&nbsp;Erase
+      <Button title="Borrar progreso" inverted="true" to="" onClick={() => {toggleEraseMenu(); setNavOpen(false)}}>
+        <FontAwesomeIcon icon={faEraser} />&nbsp;Borrar progreso
       </Button>
-      <Button title="Download Progress" inverted="true" to="" onClick={(ev) => {downloadProgress(gameId, gameProgress, ev); setNavOpen(false)}}>
+      {/**
+       * <Button title="Download Progress" inverted="true" to="" onClick={(ev) => {downloadProgress(gameId, gameProgress, ev); setNavOpen(false)}}>
         <FontAwesomeIcon icon={faDownload} />&nbsp;Download
       </Button>
       <Button title="Load Progress from JSON" inverted="true" to="" onClick={() => {toggleUploadMenu(); setNavOpen(false)}}>
         <FontAwesomeIcon icon={faUpload} />&nbsp;Upload
       </Button>
-      <Button title="Impressum, privacy policy" inverted="true" to="" onClick={() => {toggleImpressum(); setNavOpen(false)}}>
+       <Button title="Impressum, privacy policy" inverted="true" to="" onClick={() => {toggleImpressum(); setNavOpen(false)}}>
         <FontAwesomeIcon icon={faCircleInfo} />&nbsp;Impressum
-      </Button>
+        </Button>
       <Button title="Preferences" inverted="true" to="" onClick={() => {togglePreferencesPopup(); setNavOpen(false)}}>
          <FontAwesomeIcon icon={faGear} />&nbsp;Preferences
        </Button>
+       */}
     </div>
   </div>
 }
@@ -227,7 +232,7 @@ export function LevelAppBar({isLoading, levelTitle, toggleImpressum, pageNumber=
         <div>
           <span className="app-bar-title">{levelTitle}</span>
         </div>
-        <div className="nav-btns">
+        <div className="">
           <InventoryButton pageNumber={pageNumber} setPageNumber={setPageNumber}/>
           <MenuButton navOpen={navOpen} setNavOpen={setNavOpen}/>
         </div>
@@ -236,7 +241,7 @@ export function LevelAppBar({isLoading, levelTitle, toggleImpressum, pageNumber=
           <PreviousButton setNavOpen={setNavOpen} />
           <HomeButton isDropdown={true} />
           <InputModeButton setNavOpen={setNavOpen} isDropdown={true}/>
-          <ImpressumButton setNavOpen={setNavOpen} toggleImpressum={toggleImpressum} isDropdown={true} />
+          {/**<ImpressumButton setNavOpen={setNavOpen} toggleImpressum={toggleImpressum} isDropdown={true} /> */}
         </div>
       </> :
       <>
@@ -252,7 +257,7 @@ export function LevelAppBar({isLoading, levelTitle, toggleImpressum, pageNumber=
           <PreviousButton setNavOpen={setNavOpen} />
           <NextButton worldSize={gameInfo.data?.worldSize[worldId]} difficulty={difficulty} completed={completed} setNavOpen={setNavOpen} />
           <InputModeButton setNavOpen={setNavOpen} isDropdown={false}/>
-          <ImpressumButton setNavOpen={setNavOpen} toggleImpressum={toggleImpressum} isDropdown={false} />
+          {/**<ImpressumButton setNavOpen={setNavOpen} toggleImpressum={toggleImpressum} isDropdown={false} /> */}
         </div>
       </>
     }
