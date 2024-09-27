@@ -1,8 +1,9 @@
-import Game.Levels.Equivalencias.L2
+import Game.Levels.Equivalencias.L9
 
 World "Equivalencias"
-Level 3
-Title "Ejercicio 3"
+Level 10
+Title "Ejercicio 10"
+
 
 Introduction
 "
@@ -30,5 +31,5 @@ Por último, otros comandos que pueden llegar a ser útiles son:
 Conclusion "
 "
 
-Statement (p q : Prop): (p → q) → p ↔ p := by
+Statement (p q : Prop): (p ∧ q) ∨ (¬p ∧ ¬q) ↔ (p → q) ∧ (q → p) := by
   sorry

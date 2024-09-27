@@ -14,6 +14,8 @@ En la parte derecha encuentras los teoremas que puedes usar, discriminados segú
 
 Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'.
 
+Si llegas a ver una expresión como '¬p ∨ q ∧ r', no te asustes por el hecho de no tener paréntesis. Es un trabajo en progreso, pero por ahora deberías saber que es estándar en matemáticas que los operadores lógicos sean asociativos hacia la izquierda. Entonces ese que acabamos de ver se interpretaría como '¬p ∨ (q ∧ r)'.
+
 Por último, otros comandos que pueden llegar a ser útiles son:
 
 '¬' = '\\neg'
