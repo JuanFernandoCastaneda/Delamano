@@ -137,17 +137,17 @@ partial def findForbiddenTactics (inputCtx : Parser.InputContext) (workerState :
           pure ()
         | none =>
           -- Tactic is not in the inventory.
-          addMessageByDifficulty info s!"The tactic '{val}' is not available in this game!"
+          addMessageByDifficulty info s!"La táctica '{val}' no está disponible en este juego"
       | some tac =>
         -- Tactic is introduced at some point in the game.
         if tac.disabled then
           -- Tactic is disabled in this level.
-          addMessageByDifficulty info s!"The tactic '{val}' is disabled in this level!"
+          addMessageByDifficulty info s!"La táctica '{val}' no está disponible en este nivel"
         else if tac.locked then
           match workerState.inventory.find? (· == val) with
           | none =>
             -- Tactic is marked as locked and not in the inventory.
-            addMessageByDifficulty info s!"You have not unlocked the tactic '{val}' yet!"
+            addMessageByDifficulty info s!"No has desbloqueado la táctica '{val}' aún"
           | some _ =>
             -- Tactic is in the inventory, allow it.
             pure ()
@@ -169,17 +169,17 @@ partial def findForbiddenTactics (inputCtx : Parser.InputContext) (workerState :
       match theoremsAndDefs.find? (·.name == n) with
       | none =>
         -- Theorem will never be introduced in this game
-        addMessageByDifficulty info s!"The theorem/definition '{n}' is not available in this game!"
+        addMessageByDifficulty info s!"¡El teorema/definición '{n}' está desactivado en este juego!"
       | some thm =>
         -- Theorem is introduced at some point in the game.
         if thm.disabled then
           -- Theorem is disabled in this level.
-          addMessageByDifficulty info s!"The theorem/definition '{n}' is disabled in this level!"
+          addMessageByDifficulty info s!"¡El teorema/definición '{n}' está desactivado en este nivel!"
         else if thm.locked then
           match workerState.inventory.find? (· == n.toString) with
           | none =>
             -- Theorem is still locked.
-            addMessageByDifficulty info s!"You have not unlocked the theorem/definition '{n}' yet!"
+            addMessageByDifficulty info s!"¡No has desbloqueado el teorema/definición '{n}' aún!"
           | some _ =>
             -- Theorem is in the inventory, allow it.
             pure ()
