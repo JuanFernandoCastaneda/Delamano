@@ -16,10 +16,27 @@ Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escri
 Si llegas a ver una expresión como '¬p ∨ q ∧ r', no te asustes por el hecho de no tener paréntesis. Es un trabajo en progreso, pero por ahora deberías saber que tiene más precedencia el ∧ que el ∨. Entonces ese que acabamos de ver se interpretaría como '¬p ∨ (q ∧ r)'.
 
 Por último, otros comandos que pueden llegar a ser útiles son: '¬' = '\\neg'; '∨' = '\\or'; '∧' = '\\and'; '→' = '\\r' ; '↔' = '\\lr'.
+
+PARA DEMOSTRAR ESTE EJERCICIO NO PUEDES USAR LOS TEOREMAS 'definicion_equivalencia' NI 'definicion_equivalencia_2'.
 "
 
 Conclusion "
 "
 
+DisabledTheorem definicion_equivalencia definicion_equivalencia_2
+
 Statement (p q : Prop): (p ∧ q) ∨ (¬p ∧ ¬q) ↔ (p → q) ∧ (q → p) := by
-  sorry
+  rw [distributividad_o_sobre_y]
+  rw [definicion_implicacion]
+  rw [definicion_implicacion]
+  rw [conmutatividad_o]
+  rw (config := {occs := .pos [2]}) [conmutatividad_o]
+  rw [distributividad_o_sobre_y]
+  rw [distributividad_o_sobre_y]
+  rw [conmutatividad_o]
+  rw [negacion_o]
+  rw (config := {occs := .pos [2]}) [conmutatividad_y]
+  rw [identidad_y]
+  rw (config := {occs := .pos [3]}) [conmutatividad_o]
+  rw [negacion_o]
+  rw [identidad_y]
