@@ -35,14 +35,14 @@ export default defineConfig({
     port: 3000,
     proxy: {
       '/websocket': {
-        target: 'ws://localhost:8080',
+        target: 'ws://localhost:80',
         ws: true
       },
       '/import': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:80',
       },
       '/data': {
-        target: 'http://localhost:8080',
+        target: 'http://localhost:80',
       },
     }
   },
