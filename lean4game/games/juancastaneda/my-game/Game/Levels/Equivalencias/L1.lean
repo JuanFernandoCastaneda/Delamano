@@ -177,7 +177,7 @@ NewTheorem identidad_o identidad_y dominacion_o dominacion_y idempotencia_o idem
 
 NewTactic rw config
 
-Statement : ¬(p → q) ↔ p ∧ ¬q  := by
+Statement : ¬(p → q) ↔ p ∧ ¬q := by
   rw [definicion_implicacion]
   rw [de_morgan_o]
   rw [doble_negacion]
