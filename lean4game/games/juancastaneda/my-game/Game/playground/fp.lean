@@ -160,15 +160,65 @@ def fives : String × Int := ("five", 5)
 #check Sort
 #check Type 1
 def zip {α β : Type} (xs : List α) (ys : List β) : List (α × β) :=
-  match p: (List.length xs < List.length ys) with
+  match (List.length xs) < (List.length ys) with
   | true => []
   | false => []
+#eval Eq.subst (motive := fun x => x < 5)
+
 
 def zip2 {α β : Type} (xs : List α) (ys : List β) : List (α × β) :=
   if (List.length xs < List.length ys) then
-    []
+    match xs with
+    | [] => []
+    | x :: s => (List.head ys) :: zip2
   else
     []
 
+def zip3 {α β : Type} (xs : List α) (ys : List β) : List (α × β) :=
+  match (xs, ys) with
+  | ([], _) => []
+  | (_, []) => []
+  | (x :: s1, y :: s2) => (x, y) :: (zip3 s1 s2)
 
-#eval Eq.subst (motive := fun x => x < 5)
+def zip4 {α β : Type} (xs : List α) (ys : List β) : List (α × β) :=
+  match xs with
+  | [] => []
+  | x :: s1 => match ys with
+              | [] => []
+              | y :: s2 => (x, y) :: zip4 s1 s2
+
+#eval zip4 [1, 2, 3] [4, 5, 6]
+#eval zip4 [1] [2, 3]
+#eval zip4 ([]: List Int) ([]: List Int)
+
+def zip5: (l1: List α) → (l2: List β) → List (α × β)
+ | [], _ => []
+ | _, [] => []
+ | h1::t1, h2::t2 => (h1, h2):: zip5 t1 t2
+
+def firstN {α : Type} (xs : List α) (n : Nat) : List α :=
+  match xs with
+  | [] => []
+  | head :: tail => match n with
+              | Nat.zero => []
+              | Nat.succ predecessor => head :: firstN tail predecessor
+
+def firstN2: (xs : List α) → (n : Nat) → List α
+  | [], _ => []
+  | _, Nat.zero => []
+  | h :: t, Nat.succ p =>  h :: firstN2 t p
+
+#eval firstN [1, 3] 5
+#eval firstN [1, 3, 4, 5] 2
+
+def halve : Nat → Nat
+  | 0 => 0
+  | 1 => 0
+  | n + 2 => (halve n) + 1
+
+#eval halve 5
+
+/-Es con \centerdot o \.-/
+#eval (· + 5) 3
+#eval (· < 3) 5
+#eval (List.length · < List.length [5]) [1, 2, 3]
