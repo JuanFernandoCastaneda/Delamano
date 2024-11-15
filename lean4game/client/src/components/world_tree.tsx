@@ -313,7 +313,8 @@ export function WorldTreePanel({worlds, worldSize, rulesHelp, setRulesHelp}:
       const edge = worlds.edges[i]
       let sourceCompleted = completed[edge[0]].slice(1).every(Boolean)
       // if the origin world is not completed, mark the target world as non-playable
-      if (!sourceCompleted) {completed[edge[1]][0] = false}
+      // AQUÍ. ESTO SE PUEDE COMENTAR PARA PERMITIR EL ACCESO AL OTRO MUNDO.
+      //if (!sourceCompleted) {completed[edge[1]][0] = false}
       svgElements.push(
         <WorldPath key={`path_${edge[0]}-->${edge[1]}`}
           source={nodes[edge[0]]} target={nodes[edge[1]]} unlocked={sourceCompleted}/>
@@ -341,6 +342,7 @@ export function WorldTreePanel({worlds, worldSize, rulesHelp, setRulesHelp}:
             level={i}
             position={position}
             completed={completed[worldId][i]}
+            // AQUÍ. antes: completed[worldId][i-1]
             unlocked={completed[worldId][i-1]}
             key={`${gameId}-${worldId}-${i}`}
             worldSize={worldSize[worldId]}

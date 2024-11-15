@@ -4,7 +4,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 import type { PayloadAction } from '@reduxjs/toolkit'
 import { loadState } from "./local_storage";
-import { WorkDoneProgressBegin } from 'vscode-languageserver-protocol';
+import { integer, WorkDoneProgressBegin } from 'vscode-languageserver-protocol';
 
 interface Selection {
   selectionStartLineNumber: number,
@@ -16,6 +16,7 @@ interface LevelProgressState {
   code: string,
   selections: Selection[],
   completed: boolean,
+  numberSteps: integer,
   help: number[], // A set of rows where hidden hints have been displayed
 }
 interface WorldProgressState {
@@ -39,7 +40,7 @@ export interface GameProgressState {
  * 1 |     yes      |      no     |
  * 2 |     yes      |     yes     |
  */
-const DEFAULT_DIFFICULTY = 2
+const DEFAULT_DIFFICULTY = 1
 
 /** The progress made on all lean4-games */
 interface ProgressState {
@@ -49,7 +50,7 @@ interface ProgressState {
 const initialProgressState: ProgressState = loadState() ?? { games: {} }
 
 // TODO: There was some weird unreproducible bug with removing `as LevelProgressState` here...
-const initalLevelProgressState: LevelProgressState = {code: "", completed: false, selections: [], help: []}
+const initalLevelProgressState: LevelProgressState = {code: "", completed: false, selections: [], numberSteps: 1, help: []}
 
 /** Add an empty skeleton with progress for the current game */
 function addGameProgress (state: ProgressState, action: PayloadAction<{game: string}>) {
@@ -77,10 +78,11 @@ export const progressSlice = createSlice({
   initialState: initialProgressState,
   reducers: {
     /** put edited code in the state and set completed to false */
-    codeEdited(state: ProgressState, action: PayloadAction<{game: string, world: string, level: number, code: string}>) {
+    codeEdited(state: ProgressState, action: PayloadAction<{game: string, world: string, level: number, code: string, nextStep: integer}>) {
       addLevelProgress(state, action)
       state.games[action.payload.game.toLowerCase()].data[action.payload.world][action.payload.level].code = action.payload.code
       state.games[action.payload.game.toLowerCase()].data[action.payload.world][action.payload.level].completed = false
+      state.games[action.payload.game.toLowerCase()].data[action.payload.world][action.payload.level].numberSteps = action.payload.nextStep
     },
     /** TODO: docstring */
     changedSelection(state: ProgressState, action: PayloadAction<{game: string, world: string, level: number, selections: Selection[]}>) {
@@ -145,6 +147,13 @@ export function selectLevel(game: string, world: string, level: number) {
   }
 }
 
+/** Dame el siguiente step que va a existir */
+export function selectNumberSteps(game: string, world: string, level: number) {
+  return (state) => {
+    return selectLevel(game.toLowerCase(), world, level)(state).numberSteps
+  }
+}
+
 /** return the code of the current level */
 export function selectCode(game: string, world: string, level: number) {
   return (state) => {
@@ -189,9 +198,10 @@ export function selectProgress(game: string) {
 }
 
 /** return difficulty for the current game if it exists */
+// AQUÍ. ANTES ERA state.progress.games[game.toLowerCase()]?.difficulty ?? DEFAULT_DIFFICULTY
 export function selectDifficulty(game: string) {
   return (state) => {
-    return state.progress.games[game.toLowerCase()]?.difficulty ?? DEFAULT_DIFFICULTY
+    return 1
   }
 }
 

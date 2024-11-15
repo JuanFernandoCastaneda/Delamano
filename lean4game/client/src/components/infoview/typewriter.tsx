@@ -1,5 +1,8 @@
 import * as React from 'react'
 import { useRef, useState, useEffect } from 'react'
+import { useSelector, useStore } from 'react-redux'
+import { useAppDispatch, useAppSelector } from '../../hooks'
+import { selectNumberSteps } from '../../state/progress'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faWandMagicSparkles } from '@fortawesome/free-solid-svg-icons'
 import * as monaco from 'monaco-editor/esm/vs/editor/editor.api.js'
@@ -17,10 +20,11 @@ import { InteractiveDiagnostic, RpcSessionAtPos, getInteractiveDiagnostics } fro
 import { Diagnostic } from 'vscode-languageserver-types';
 import { DocumentPosition } from '../../../../node_modules/lean4-infoview/src/infoview/util';
 import { RpcContext } from '../../../../node_modules/lean4-infoview/src/infoview/rpcSessions';
-import { DeletedChatContext, InputModeContext, MonacoEditorContext, ProofContext } from './context'
+import { DeletedChatContext, InputModeContext, MonacoEditorContext, ProofContext, WorldLevelIdContext } from './context'
+import { GameIdContext } from '../../app'
 import { goalsToString, lastStepHasErrors, loadGoals } from './goals'
 import { GameHint, ProofState } from './rpc_api'
-import { transformar_input_usuario, transformar_respuesta_editor } from '../../helper_functions'
+import { transformar_input_usuario, transformar_respuesta_editor } from '../../helperFunctions/orchestrator'
 
 export interface GameDiagnosticsParams {
   uri: DocumentUri;
@@ -77,10 +81,14 @@ export function Typewriter({disabled}: {disabled?: boolean}) {
   const model = editor.getModel()
   const uri = model.uri.toString()
 
+  const gameId = React.useContext(GameIdContext)
+  const {worldId, levelId} = React.useContext(WorldLevelIdContext)
+
   const [oneLineEditor, setOneLineEditor] = useState<monaco.editor.IStandaloneCodeEditor>(null)
   const [processing, setProcessing] = useState(false)
 
   const {typewriterInput, setTypewriterInput} = React.useContext(InputModeContext)
+  const currentStep = useAppSelector(selectNumberSteps(gameId, worldId, levelId))
 
   const inputRef = useRef()
 
@@ -205,7 +213,7 @@ export function Typewriter({disabled}: {disabled?: boolean}) {
         ),
         /* AQUÍ ANTES SOLO ESTABA TYPWRITERINPUT+\n, pero pues como
       quise quitar la necesidad de escribir la táctica, ajam. */
-        text: transformar_input_usuario(typewriterInput),
+        text: transformar_input_usuario(typewriterInput, worldId, currentStep),
         forceMoveMarkers: false
       }])
       setTypewriterInput('')
@@ -230,7 +238,7 @@ export function Typewriter({disabled}: {disabled?: boolean}) {
   /** If the last step has an error, add the command to the typewriter. */
   useEffect(() => {
     if (lastStepHasErrors(proof)) {
-      setTypewriterInput(transformar_respuesta_editor(proof?.steps[proof?.steps.length - 1].command))
+      setTypewriterInput(transformar_respuesta_editor(proof?.steps[proof?.steps.length - 1].command, worldId))
     }
   }, [proof])
 

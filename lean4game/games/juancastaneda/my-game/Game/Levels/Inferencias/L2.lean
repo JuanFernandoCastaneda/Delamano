@@ -1,7 +1,8 @@
-import Game.Levels.Inferencias.L2
+import Game.Levels.Inferencias.L1
 
 World "Inferencias"
-Title "Inferencias"
+Level 2
+Title "Ejercicio 2"
 
 Introduction
 "
@@ -15,3 +16,11 @@ Si llegas a ver una expresión como '¬p ∨ q ∧ r', no te asustes por el hech
 
 Por último, otros comandos que pueden llegar a ser útiles son: '¬' = '\\neg'; '∨' = '\\or'; '∧' = '\\and'; '→' = '\\r' ; '↔' = '\\lr'.
 "
+
+Conclusion ""
+
+Statement (p q r: Prop) (h1: p) (h2: ¬q → ¬p) (h3: ¬r → ¬q): r := by
+{
+  have s1 := by modus_tollens h2, h1
+  modus_tollens h3, s1
+}

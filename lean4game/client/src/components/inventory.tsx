@@ -11,7 +11,7 @@ import { selectDifficulty, selectInventory } from '../state/progress';
 import { store } from '../state/store';
 import { useSelector } from 'react-redux';
 import { InputModeContext } from './infoview/context';
-import { extraer_hipotesis_altTitle } from '../helper_functions';
+import { extraer_hipotesis_altTitle } from '../helperFunctions/equivalencias';
 
 export function Inventory({levelInfo, openDoc, lemmaTab, setLemmaTab, enableAll=false} :
   {
@@ -26,12 +26,10 @@ export function Inventory({levelInfo, openDoc, lemmaTab, setLemmaTab, enableAll=
     <div className="inventory">
     {/* TODO: Click on Tactic: show info
       TODO: click on paste icon -> paste into command line */}
-      {/*
       <h2>Tactics</h2>
       {levelInfo?.tactics &&
         <InventoryList items={levelInfo?.tactics} docType="Tactic" openDoc={openDoc} enableAll={enableAll}/>
       }
-      */}
       {/*
       <h2>Definiciones</h2>
       {levelInfo?.definitions &&
@@ -117,7 +115,8 @@ function InventoryItem({item, docType, name, displayName, locked, disabled, newl
   const handleClick = () => {
     if (enableAll || !locked) {
       if (docType == "Lemma") {
-        setTypewriterInput(typewriterInput + `${displayName} ${extraer_hipotesis_altTitle(item.altTitle)}`)
+        // ANTES ESTABA COMO typewriterInput + `${displayName} ${extraer_hipotesis_altTitle(item.altTitle)}`
+        setTypewriterInput(typewriterInput + `${displayName}`)
       } // docType == "Definition"
       else {
         showDoc()

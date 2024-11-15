@@ -37,7 +37,7 @@ import { store } from '../../state/store';
 import { Hints, MoreHelpButton, filterHints } from '../hints';
 import { DocumentPosition } from '../../../../node_modules/lean4-infoview/src/infoview/util';
 import { DiagnosticSeverity } from 'vscode-languageclient';
-import { transformar_respuesta_editor } from '../../helper_functions';
+import { transformar_respuesta_editor } from '../../helperFunctions/orchestrator';
 
 /** Wrapper for the two editors. It is important that the `div` with `codeViewRef` is
  * always present, or the monaco editor cannot start.
@@ -260,7 +260,7 @@ const goalFilter = {
 }
 
 /** The display of a single entered lean command */
-function Command({ proof, i, deleteProof }: { proof: ProofState, i: number, deleteProof: any }) {
+function Command({ proof, i, deleteProof, worldId }: { proof: ProofState, i: number, deleteProof: any, worldId:string }) {
   // The first step will always have an empty command
   if (!proof?.steps[i]?.command) { return <></> }
 
@@ -268,12 +268,12 @@ function Command({ proof, i, deleteProof }: { proof: ProofState, i: number, dele
     // If the last step has errors, we display the command in a different style
     // indicating that it will be removed on the next try.
     return <div className="failed-command">
-      <i>Failed command</i>: {transformar_respuesta_editor(proof?.steps[i].command)}
+      <i>Failed command</i>: {transformar_respuesta_editor(proof?.steps[i].command, worldId)}
     </div>
   } else {
     return <div className="command">
       {/* AQUÍ TAMBIÉN LE PUSIMOS UN SLICE (4, -2) para remover lo que no nos gusta. */}
-      <div className="command-text">{transformar_respuesta_editor(proof?.steps[i].command)}</div>
+      <div className="command-text">{transformar_respuesta_editor(proof?.steps[i].command, worldId)}</div>
       <Button to="" className="undo-button btn btn-inverted" title="Retry proof from here" onClick={deleteProof}>
         <FontAwesomeIcon icon={faDeleteLeft} />&nbsp;Retry
       </Button>
@@ -393,6 +393,7 @@ export function TypewriterInterfaceWrapper(props: { world: string, level: number
 export function TypewriterInterface({props}) {
   const ec = React.useContext(EditorContext)
   const gameId = React.useContext(GameIdContext)
+  const {worldId, levelId} = React.useContext(WorldLevelIdContext)
   const editor = React.useContext(MonacoEditorContext)
   const model = editor.getModel()
   const uri = model.uri.toString()
@@ -436,7 +437,7 @@ export function TypewriterInterface({props}) {
       setSelectedStep(undefined)
       /* ANTES SOLO ESTABA proof?.steps[line].command PERO PARA
       QUE SALIERA SOLO EL pues ajá.*/
-      setTypewriterInput(transformar_respuesta_editor(proof?.steps[line].command))
+      setTypewriterInput(transformar_respuesta_editor(proof?.steps[line].command, worldId))
       // Reload proof on deleting
       loadGoals(rpcSess, uri, setProof, setCrashed)
       ev.stopPropagation()
@@ -535,7 +536,7 @@ export function TypewriterInterface({props}) {
               //   </div>
               // } else {
                 return <div key={`proof-step-${i}`} className={`step step-${i}` + (selectedStep == i ? ' selected' : '')}>
-                  <Command proof={proof} i={i} deleteProof={deleteProof(i)} />
+                  <Command proof={proof} i={i} deleteProof={deleteProof(i)} worldId={worldId} />
                   <Errors errors={step.diags} typewriterMode={true} />
                   {mobile && i == 0 && props.data?.introduction &&
                     <div className={`message information step-0${selectedStep === 0 ? ' selected' : ''}`} onClick={toggleSelectStep(0)}>

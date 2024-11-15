@@ -8,29 +8,13 @@ def sd1 (h1: p ∨ q) (h2: ¬p): q := by
     simp
   }
   apply s1 h2
-
-def sd2 (h1: ¬p ∨ q) (h2: p): q := by
-  sorry
-
+def sd2 (h1: ¬p ∨ q) (h2: p): q := by sorry
 def sd3 (h1: p ∨ ¬q) (h2: q): p := by sorry
 def sd4 (h1: p ∨ q) (h2: ¬q): p := by sorry
-
-#check sd1
-#help tactic
-syntax "sd" : tactic
-
-macro_rules
-  | `(tactic| sd) => `(tactic| apply sd1)
-
 
 /- Podría abstraer este proceso de tener que escribir todo de una forma como intentar $h1 $h2 que de una lista de métodos intente todos xd-/
 macro "sd" h1:term "," h2:term: tactic => do
   `(tactic | (first | apply sd1 $h1 $h2 | apply sd2 $h1 $h2 | apply sd3 $h1 $h2 | apply sd4 $h1 $h2))
-
-macro "sdp": tactic => do
-  `(tactic |
-    apply sd1
-  )
 
 example (h1: p ∨ q) (h2: ¬p): q := by
   apply sd1 h1 h2
@@ -46,8 +30,6 @@ Este no sirve si algo
 example (h1: ¬p ∨ q) (h2: ¬p): q := by
   sd h1 , h2
 -/
-
-
 
 example (p q r: Prop) (h1: p) (h2: p → q) (h3: ¬q ∨ r): r := by
 {
@@ -68,8 +50,36 @@ example (p q r: Prop) (h1: p) (h2: p → q) (h3: ¬q ∨ r): r := by
   exact s2
 }
 
-variable (h1: p∨q) (h2:¬p)
-
 /-Hacer método que reciba por parámetro el número y la prueba y solo intercambiar esa ocurrencia.
 
 Seguro se puede solo llamando rw {config} blablabla-/
+
+example (h2: p → q) (h1: p): q :=
+  h2 h1
+
+def mt1 (h2: ¬q → ¬p) (h1: p): q := sorry
+def mt2 (h2: ¬q → p) (h1: ¬p): q := sorry
+def mt3 (h2: q → ¬p) (h1: p): ¬q := sorry
+def mt4 (h2: q → p) (h1: ¬p): ¬q := sorry
+
+macro "mt" h1:term "," h2:term : tactic => do
+  `(tactic | (first | apply mt1 $h1 $h2 | apply mt2 $h1 $h2 | apply mt3 $h1 $h2 | apply mt4 $h1 $h2))
+
+example (h2: ¬q → ¬p) (h1: p): q := by
+  mt h2 , h1
+
+macro "sea" nombre:term "por" tac:Lean.Parser.Tactic.tacticSeq: tactic => do
+  `(tactic | have " " $nombre := by $tac)
+
+structure Counter where
+  contador : Nat
+
+def idGen : StateM Counter
+| state => Nat.succ state
+
+example (p q r: Prop) (h1: p) (h2: p → q) (h3: ¬q ∨ r): r := by
+{
+  have s1 := h2 h1
+  sea s2 por (sd h3 , s1)
+  exact s2
+}

@@ -235,10 +235,8 @@ function PlayableLevel({impressum, setImpressum}) {
   const [inventoryDoc, setInventoryDoc] = useState<{name: string, type: string}>(null)
   function closeInventoryDoc () {setInventoryDoc(null)}
 
-
-
-  const onDidChangeContent = (code) => {
-    dispatch(codeEdited({game: gameId, world: worldId, level: levelId, code}))
+  const onDidChangeContent = (code, newNextStep) => {
+    dispatch(codeEdited({game: gameId, world: worldId, level: levelId, code, nextStep: newNextStep}))
   }
 
   const onDidChangeSelection = (monacoSelections) => {
@@ -247,7 +245,6 @@ function PlayableLevel({impressum, setImpressum}) {
       {return {selectionStartLineNumber, selectionStartColumn, positionLineNumber, positionColumn}})
     dispatch(changedSelection({game: gameId, world: worldId, level: levelId, selections}))
   }
-
 
   const {editor, infoProvider, editorConnection} =
     useLevelEditor(codeviewRef, initialCode, initialSelections, onDidChangeContent, onDidChangeSelection)
@@ -512,6 +509,8 @@ function Introduction({impressum, setImpressum}) {
 //   </Split>
 // }
 
+
+// onDidChangeContent se le pasa la función que hace el dispatch.
 function useLevelEditor(codeviewRef, initialCode, initialSelections, onDidChangeContent, onDidChangeSelection) {
 
   const gameId = React.useContext(GameIdContext)
@@ -530,7 +529,8 @@ function useLevelEditor(codeviewRef, initialCode, initialSelections, onDidChange
   useEffect(() => {
     const model = monaco.editor.createModel(initialCode ?? '', 'lean4', uri)
     if (onDidChangeContent) {
-      model.onDidChangeContent(() => onDidChangeContent(model.getValue()))
+      // AQUÍ EL MODEL.GETFULLMODELBLBALBALA linenumber-1 da la cantidad de pasos que llevamos :D
+      model.onDidChangeContent(() => onDidChangeContent(model.getValue(), model.getFullModelRange().getEndPosition().lineNumber))
     }
 
     const editor = monaco.editor.create(codeviewRef.current!, {
@@ -555,6 +555,7 @@ function useLevelEditor(codeviewRef, initialCode, initialSelections, onDidChange
       'semanticHighlighting.enabled': true,
       theme: 'vs-code-theme-converted'
     })
+    // SE ESTÁ PREGUNTANDO SI EXISTE LA FUNCIÓN DADA POR PARÁMETRO? XD
     if (onDidChangeSelection) {
       editor.onDidChangeCursorSelection(() => onDidChangeSelection(editor.getSelections()))
     }
