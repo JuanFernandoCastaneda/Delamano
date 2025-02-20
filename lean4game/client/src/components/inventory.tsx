@@ -11,7 +11,7 @@ import { selectDifficulty, selectInventory } from '../state/progress';
 import { store } from '../state/store';
 import { useSelector } from 'react-redux';
 import { InputModeContext } from './infoview/context';
-import { extraer_hipotesis_altTitle } from '../helperFunctions/equivalencias';
+import { esTacticaDeSoporte } from '../helperFunctions/orchestrator';
 
 export function Inventory({levelInfo, openDoc, lemmaTab, setLemmaTab, enableAll=false} :
   {
@@ -22,11 +22,13 @@ export function Inventory({levelInfo, openDoc, lemmaTab, setLemmaTab, enableAll=
     enableAll?: boolean,
   }) {
 
+  console.log("DATAAAAAAAAAAAAAAAAAAA", levelInfo?.tactics, levelInfo?.lemmas)
+
   return (
     <div className="inventory">
     {/* TODO: Click on Tactic: show info
       TODO: click on paste icon -> paste into command line */}
-      <h2>Tactics</h2>
+      <h2>Tácticas</h2>
       {levelInfo?.tactics &&
         <InventoryList items={levelInfo?.tactics} docType="Tactic" openDoc={openDoc} enableAll={enableAll}/>
       }
@@ -86,7 +88,7 @@ function InventoryList({items, docType, openDoc, tab=null, setTab=undefined, lev
           // For lemas, sort entries `available > disabled > locked`
           // otherwise alphabetically
           (x, y) => +(docType == "Lemma") * (+x.locked - +y.locked || +x.disabled - +y.disabled) || x.displayName.localeCompare(y.displayName)
-        ).filter(item => !item.hidden && ((tab ?? categories[0]) == item.category)).map((item, i) => {
+        ).filter(item => !item.hidden && ((tab ?? categories[0]) == item.category) && !esTacticaDeSoporte(item.name)).map((item, i) => {
             return <InventoryItem key={`${item.category}-${item.name}`}
               item={item}
               docType={docType}

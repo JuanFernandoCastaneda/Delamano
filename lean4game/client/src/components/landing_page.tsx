@@ -49,8 +49,7 @@ function Tile({gameId, data}: {gameId: string, data: GameTile|undefined}) {
   return <div className="game" onClick={routeChange}>
     <div className="wrapper">
       <div className="title">{data.title}</div>
-      <div className="short-description">{data.short}
-      </div>
+      {/**<div className="short-description">{data.short}</div> */}
       { data.image ? <img className="image" src={path.join("data", gameId, data.image)} alt="" /> : <div className="image"/> }
       <div className="long description"><Markdown>{data.long}</Markdown></div>
     </div>
@@ -60,18 +59,18 @@ function Tile({gameId, data}: {gameId: string, data: GameTile|undefined}) {
         <td title="consider playing these games first.">Prerrequisitos</td>
         <td><Markdown>{data.prerequisites.join(', ')}</Markdown></td>
       </tr>
-      <tr>
+      {/**<tr>
         <td>Cantidad de mundos</td>
         <td>{data.worlds}</td>
-      </tr>
+      </tr> */}
       <tr>
         <td>Ejercicios</td>
         <td>{data.levels}</td>
       </tr>
-      <tr>
+      {/**<tr>
         <td>Idioma</td>
         <td title={`in ${data.languages.join(', ')}`}>{data.languages.map((lan) => flag[lan]).join(', ')}</td>
-      </tr>
+      </tr> */}
       </tbody>
     </table>
   </div>
@@ -133,7 +132,9 @@ function LandingPage() {
   //
   let allGames = [
     // "local/my-game", ASÍ PONDRÍA ESTA VAINA SI TUVIERA algo en la carpeta junto a la carpeta de lean4game.
-    "juancastaneda/my-game"
+    "juancastaneda/equiv-infer",
+    "juancastaneda/induc-nat",
+    "juancastaneda/induc-seq"
   ]
   let allTiles = allGames.map((gameId) => (useGetGameInfoQuery({game: `g/${gameId}`}).data?.tile))
 

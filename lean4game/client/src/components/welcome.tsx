@@ -25,6 +25,7 @@ import { WelcomeAppBar } from './app_bar'
 import { Hint } from './hints'
 
 
+
 /** the panel showing the game's introduction text */
 function IntroductionPanel({introduction, setPageNumber}: {introduction: string, setPageNumber}) {
   const {mobile} = React.useContext(PreferencesContext)

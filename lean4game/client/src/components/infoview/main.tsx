@@ -346,7 +346,7 @@ function GoalsTabs({ proofStep, last, onClick, onGoalChange=(n)=>{}}: { proofSte
       {proofStep.goals.map((goal, i) => (
         // TODO: Should not use index as key.
         <div key={`proof-goal-${i}`} className={`tab ${i == (selectedGoal) ? "active" : ""}`} onClick={(ev) => { onGoalChange(i); setSelectedGoal(i); ev.stopPropagation() }}>
-          {i ? `Goal ${i + 1}` : "Active Goal"}
+          {i ? `Objetivo activo ${i + 1}` : "Objetivo activo 1"}
         </div>
       ))}
     </div>

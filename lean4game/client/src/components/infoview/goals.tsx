@@ -157,7 +157,7 @@ export const Goal = React.memo((props: GoalProps) => {
             undefined,
         [locs, goal.mvarId])
     const goalLi = <div key={'goal'}>
-        <div className="goal-title">Goal: </div>
+        <div className="goal-title">Estado de la prueba: </div>
         <LocationsContext.Provider value={goalLocs}>
             <InteractiveCode fmt={goal.type} />
         </LocationsContext.Provider>
@@ -176,10 +176,10 @@ export const Goal = React.memo((props: GoalProps) => {
         {/* {goal.userName && <div><strong className="goal-case">case </strong>{goal.userName}</div>} */}
         {filter.reverse && goalLi}
         {! typewriter && objectHyps.length > 0 &&
-            <div className="hyp-group"><div className="hyp-group-title">Objects:</div>
+            <div className="hyp-group"><div className="hyp-group-title">Variables:</div>
             {objectHyps.map((h, i) => <Hyp hyp={h} mvarId={goal.mvarId} key={i} />)}</div> }
         {!typewriter && assumptionHyps.length > 0 &&
-            <div className="hyp-group"><div className="hyp-group-title">Assumptions:</div>
+            <div className="hyp-group"><div className="hyp-group-title">Hipótesis:</div>
             {assumptionHyps.map((h, i) => <Hyp hyp={h} mvarId={goal.mvarId} key={i} />)}</div> }
         {/* {typewriter && typewriterMode && <Typewriter />} */}
         {!filter.reverse && goalLi}

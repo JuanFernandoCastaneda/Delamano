@@ -171,7 +171,7 @@ def completionDiagnostics (goalCount : Nat) (prevGoalCount : Nat) (completed : B
   if goalCount == 0 then
     if completed then
       out := out.push {
-        message := .text "¡nivel completado! 🎉"
+        message := .text "¡Nivel completado! 🎉"
         range := {
           start := pos
           «end» := pos
@@ -179,7 +179,7 @@ def completionDiagnostics (goalCount : Nat) (prevGoalCount : Nat) (completed : B
         severity? := Lsp.DiagnosticSeverity.information }
     else if completedWithWarnings then
       out := out.push {
-        message := .text "level completed with warnings… 🎭"
+        message := .text "Nivel completado con advertencias… 🎭"
         range := {
           start := pos
           «end» := pos
@@ -192,7 +192,7 @@ def completionDiagnostics (goalCount : Nat) (prevGoalCount : Nat) (completed : B
     -- so showing the message "intermediate goal solved" would be confusing.
     if (¬ (filterUnsolvedGoal startDiags).any (·.severity? == some .error)) then
       out := out.push {
-        message := .text "intermediate goal solved! 🎉"
+        message := .text "¡Objetivo intermedio cumplido! 🎉"
         range := {
           start := pos
           «end» := pos

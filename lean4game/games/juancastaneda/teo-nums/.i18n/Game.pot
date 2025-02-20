@@ -1,0 +1,53 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Nov 25 12:42:52 2024\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: Game.Levels.TeoriaNums.L1
+msgid "Ejercicio 1"
+msgstr ""
+
+#: Game.Levels.TeoriaNums.L1
+msgid "A la derecha están las propiedades que puedes usar. Para ver qué hace cada una puedes poner el cursor sobre el nombre y te dirá :]"
+msgstr ""
+
+#: Game.Levels.TeoriaNums.L1
+msgid "\n"
+"The message shown when the level is completed\n"
+""
+msgstr ""
+
+#: Game.Levels.TeoriaNums
+msgid "Teoría de números"
+msgstr ""
+
+#: Game.Levels.TeoriaNums
+msgid "\n"
+"This introduction text is shown when one first enters a world.\n"
+""
+msgstr ""
+
+#: Game
+msgid "Teoría de números"
+msgstr ""
+
+#: Game
+msgid "\n"
+"Este asistente te puede ayudar a resolver ejercicios de FMC por tu cuenta, sobre todo verificando que lo que estás haciendo está bien.\n"
+"\n"
+"En la mitad de la pantalla encontrarás "Mundos". Actualmente solo existe el de equivalencias, pero la idea es eventualmente agregar más, cada uno con temas nuevos.\n"
+"\n"
+"Dale clic a las bolitas verdes que aparecen. Esas te llevarán a la introducción del mundo, y eventualmente a los ejercicios.\n"
+""
+msgstr ""
+
+#: Game
+msgid "\n"
+"\n"
+""
+msgstr ""
