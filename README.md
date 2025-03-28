@@ -36,6 +36,6 @@ To run the project, there are a few non-common dependencies have to be installed
 * [Lean4](https://github.com/leanprover/lean4): a proof programming language really useful to proove theorems. Can be installed with Vscode. 
 * [Elan](https://github.com/leanprover/elan): **in case you want to run Lean4 without Vscode**, a tool for managing Lean4 installations.
 
-Furthermore, you have to build the levels of the platform for it to work. You can chose to do it with `npm build_games`, but the same library would be installed in all of the games subfolders. To avoid this, you can select which game to build (check how with the definition of the `build_games` command).
+Furthermore, you have to build the levels of the platform for it to work. You can chose to do it with `npm build_games`, but the same library would be installed in all of the games subfolders (it will be solved in a future release). To avoid this, you can select which game to build. Check how with the definition of the `build_games` command.
 
 Once build, simply run `npm start` to run the development version of the site, and play with it. 
