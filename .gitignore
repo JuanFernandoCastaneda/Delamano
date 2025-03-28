@@ -5,3 +5,4 @@ games/*/my-game/lake-packages/
 games/*/my-game/.lake/
 server/.lake
 **/.DS_Store
+.vscode

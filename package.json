@@ -73,6 +73,7 @@
     "preview": "vite preview",
     "build_server": "cd server && lake build",
     "build_client": "cross-env NODE_ENV=production vite build",
+    "build_games": "for d in games/*/; do for subd in \"$d\"*/; do (echo \"$subd\" && cd \"$subd\" && lake build); done; done",
     "production": "cross-env NODE_ENV=production node relay/index.mjs"
   },
   "eslintConfig": {
