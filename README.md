@@ -6,7 +6,7 @@ It was inspired by [ADAM's](https://adam.math.hhu.de/) Lean Game Server, and thu
 
 ## Stack (that I coded with)
 
-* Javascript, React, Redux
+* Typescript, React, Redux
 * Lean4
 
 ## The platform
