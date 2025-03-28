@@ -1,6 +1,8 @@
 # Delamano
 
-This is the source code for a web platform made with the objective of helping second semester CS students at Universidad de los Andes with their discrete math class. It does so by giving them practice exercises related to the subject, letting them input the steps they belive would solve those exercises, and checking if those steps are correct or not. Given the location of Universidad de los Andes, a significant part of the website is written in Spanish.
+This is the source code for a web platform made with the objective of helping second semester CS students at Universidad de los Andes with their discrete math class. 
+
+It does so by giving them practice exercises related to the subject, letting them input the steps they belive would solve those exercises, and checking if those steps are correct or not. Given the location of Universidad de los Andes, a significant part of the website is written in Spanish.
 
 It was inspired by [ADAM's](https://adam.math.hhu.de/) Lean Game Server, and thus shares its licence.
 
