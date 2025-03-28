@@ -23,7 +23,7 @@ Once the student selects the topic, worlds (the big circles) and levels (the sma
 
 <br><img src="https://github.com/user-attachments/assets/bb688ffd-1e98-4727-9f77-5852f6d7679f" aspect-ratio="1/1" width="60%"/><br>
 
-Inside a level, the student will find three big blocks of UI. In the middle block, the student will find all the info related with the exercise to be solved. The left block is full with tips to solve the exercise, and the right with the theorems that the student can use.
+Inside a level, the student will find three big blocks of UI. In the middle block, there is all the info related with the exercise to be solved. The left block is full with tips to solve the exercise, and the right with the theorems that the student can use.
 
 <br><img src="https://github.com/user-attachments/assets/b8d9fd21-d145-4ff4-af6c-805d81ffacc1" aspect-ratio="1/1" width="30%"/><br>
 
