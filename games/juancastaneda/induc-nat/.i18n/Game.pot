@@ -1,0 +1,163 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Wed Mar  5 12:40:34 2025\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: Game.Levels.InduccionEstructNat.L1
+msgid "Ejercicio 1"
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L1
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L1
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L1
+msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
+"\n"
+"Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L2
+msgid "Ejercicio 2"
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L2
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L2
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L2
+msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
+"\n"
+"Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L3
+msgid "Ejercicio 3"
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L3
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L3
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L3
+msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
+"\n"
+"Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L4
+msgid "Ejercicio 4"
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L4
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L4
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat.L4
+msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
+"\n"
+"Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat
+msgid "Inducción Estructural - Naturales"
+msgstr ""
+
+#: Game.Levels.InduccionEstructNat
+msgid "\n"
+"This introduction text is shown when one first enters a world.\n"
+""
+msgstr ""
+
+#: Game
+msgid "Inducción estructural Naturales"
+msgstr ""
+
+#: Game
+msgid "\n"
+"Este asistente te puede ayudar a resolver ejercicios de FMC por tu cuenta, sobre todo verificando que lo que estás haciendo está bien.\n"
+"\n"
+"En la mitad de la pantalla encontrarás "Mundos". Dale clic a las bolitas verdes que aparecen. Esas te llevarán a la introducción del mundo, y eventualmente a los ejercicios.\n"
+"\n"
+"El único mundo de este juego es el de Inducción Estructural sobre la construcción de Peano de los naturales.\n"
+""
+msgstr ""
+
+#: Game
+msgid "\n"
+"\n"
+""
+msgstr ""

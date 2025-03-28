@@ -1,0 +1,439 @@
+msgid ""
+msgstr "Project-Id-Version: Game v4.6.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Mon Mar  3 23:44:54 2025\n"
+"Last-Translator: \n"
+"Language-Team: none\n"
+"Language: en\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit"
+
+#: Game.Levels.Equivalencias.L1
+msgid "Ejercicio 1"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L1
+msgid "El ∧ o "and" es el símbolo que representa la conjunción entre dos proposiciones.\n"
+"\n"
+"Su tabla de verdad dice que si se tiene el and entre dos proposiciones, siempre es falso a menos que ambas proposiciones sean verdaderas."
+msgstr ""
+
+#: Game.Levels.Equivalencias.L2
+msgid "Ejercicio 2"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L2
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L2
+msgid ""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L3
+msgid "Ejercicio 3"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L3
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L3
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L4
+msgid "Ejercicio 4"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L4
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L4
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L5
+msgid "Ejercicio 5"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L5
+msgid "\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'. Si tienes una expresión como '(p → q) → (p → r)' y le quisieras aplicar la definición de la implicación al '(p → r)', escribirías 'definicion_implicacion; 3', pues el primer '→' es el de la expresión general que conecta '(p → q)' con '(p → r)', el segundo sería el de '(p → q)' y finalmente el tercero sería el de '(p → r)'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r', no te asustes por el hecho de no tener paréntesis. Es un trabajo en progreso, pero por ahora deberías saber que tiene más precedencia el ∧ que el ∨. Entonces ese que acabamos de ver se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son: '¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+"\n"
+"PARA DEMOSTRAR ESTE EJERCICIO NO PUEDES USAR EL TEOREMA 'absorcion_y_sobre_o'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L5
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L6
+msgid "Ejercicio 6"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L6
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L6
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L7
+msgid "Ejercicio 7"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L7
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L7
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L8
+msgid "Ejercicio 8"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L8
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L8
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L9
+msgid "Ejercicio 9"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L9
+msgid "\n"
+"Recordatorios generales:\n"
+"\n"
+"Para utilizar la otra dirección del teorema es con el símbolo '←' que se saca escribiendo '\l'. Por ejemplo, '← definicion_implicacion'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r' se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"'¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L9
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L10
+msgid "Ejercicio 10"
+msgstr ""
+
+#: Game.Levels.Equivalencias.L10
+msgid "\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría 'teorema; numero_de_ocurrencia'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion; 2'. Si tienes una expresión como '(p → q) → (p → r)' y le quisieras aplicar la definición de la implicación al '(p → r)', escribirías 'definicion_implicacion; 3', pues el primer '→' es el de la expresión general que conecta '(p → q)' con '(p → r)', el segundo sería el de '(p → q)' y finalmente el tercero sería el de '(p → r)'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r', no te asustes por el hecho de no tener paréntesis. Es un trabajo en progreso, pero por ahora deberías saber que tiene más precedencia el ∧ que el ∨. Entonces ese que acabamos de ver se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son: '¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+"\n"
+"PARA DEMOSTRAR ESTE EJERCICIO NO PUEDES USAR LOS TEOREMAS 'definicion_equivalencia' NI 'definicion_equivalencia_2'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias.L10
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Equivalencias
+msgid "Equivalencias"
+msgstr ""
+
+#: Game.Levels.Equivalencias
+msgid "\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"En la parte derecha encuentras los teoremas que puedes usar, discriminados según para qué tipo de operador lógico son. ES IMPORTANTE la dirección del teorema. Por ejemplo, si se escribe 'definicion_implicacion', el programa a buscar la primera ocurrencia de 'p → q' y la va a cambiar por '¬p ∨ q'. Si a cambio lo que se quiere es cambiar la ocurrencia de '¬p ∨ q' por 'p → q', se debe escribir '← definicion_implicacion'. El símbolo '←' se saca escribiendo '\l'.\n"
+"\n"
+"Para ejecutar algún teorema sobre una ocurrencia distinta a la primera se escribiría '{teorema} pos {numero_de_ocurrencia}'. Por ejemplo, para ejecutar la definición de la implicación en la segunda ocurrencia, se escribiría 'definicion_implicacion pos 2'. Si tienes una expresión como '(p → q) → (p → r)' y le quisieras aplicar la definición de la implicación al '(p → r)', escribirías 'definicion_implicacion pos 3', pues el primer '→' es el de la expresión general que conecta '(p → q)' con '(p → r)', el segundo sería el de '(p → q)' y finalmente el tercero sería el de '(p → r)'.\n"
+"\n"
+"Si llegas a ver una expresión como '¬p ∨ q ∧ r', no te asustes por el hecho de no tener paréntesis. Es un trabajo en progreso, pero por ahora deberías saber que tiene más precedencia el ∧ que el ∨. Entonces ese que acabamos de ver se interpretaría como '¬p ∨ (q ∧ r)'.\n"
+"\n"
+"Por último, otros comandos que pueden llegar a ser útiles son: '¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Inferencias.L1
+msgid "Ejercicio 1"
+msgstr ""
+
+#: Game.Levels.Inferencias.L1
+msgid "\n"
+"Recordatorios:\n"
+"\n"
+"Las reglas de inferencia se utilizan escribiendo 'sea {expresión} por {regla de inferencia} {hipotesis necesarias separadas por comas}'. Por ejemplo, si mi h1 es 'p' y mi h2 es 'p → q', puedo utilizar 'sea q por modus_ponens h2, h1'.\n"
+"\n"
+"Ahora las reglas de equivalencia deben referenciar una hipótesis en específico para ser utilizadas, con la siguiente forma '{regla de equivalencia} en {hipótesis a modificar}'. La dirección sigue importando.\n"
+"\n"
+"'←' = '\l'; '¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Inferencias.L1
+msgid "\n"
+""
+msgstr ""
+
+#: Game.Levels.Inferencias.L2
+msgid "Ejercicio 2"
+msgstr ""
+
+#: Game.Levels.Inferencias.L2
+msgid "\n"
+"Recordatorios:\n"
+"\n"
+"Las reglas de inferencia se utilizan escribiendo 'sea {expresión} por {regla de inferencia} {hipotesis necesarias separadas por comas}'. Por ejemplo, si mi h1 es 'p' y mi h2 es 'p → q', puedo utilizar 'sea q por modus_ponens h2, h1'.\n"
+"\n"
+"Ahora las reglas de equivalencia deben referenciar una hipótesis en específico para ser utilizadas, con la siguiente forma '{regla de equivalencia} en {hipótesis a modificar}'. La dirección sigue importando.\n"
+"\n"
+"'←' = '\l'; '¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game.Levels.Inferencias.L2
+msgid ""
+msgstr ""
+
+#: Game.Levels.Inferencias
+msgid "Inferencias"
+msgstr ""
+
+#: Game.Levels.Inferencias
+msgid "\n"
+"Este mundo funciona como los otros; tienes que escribir en la barra de abajo en la mitad los teoremas que quieres ejecutar sobre el ejercicio (y luego dar enter para ejecutarlos).\n"
+"\n"
+"Lo nuevo respecto al mundo anterior es que ahora existen reglas de inferencia además de reglas de equivalencia. Las reglas de inferencia se utilizan escribiendo 'sea {expresión} por {regla de inferencia} {hipotesis necesarias separadas por comas}'. Por ejemplo, si mi h1 es 'p' y mi h2 es 'p → q', puedo utilizar 'sea q por modus_ponens h2, h1'.\n"
+"\n"
+"Además, ahora las reglas de equivalencia deben referenciar una hipótesis en específico para ser utilizadas, con la siguiente forma '{regla de equivalencia} en {hipótesis a modificar}'. Por ejemplo, si mi h2 es 'p → q', puedo utilizar 'definicion_implicacion en h2' para modificarla a '¬p ∨ q'. También aplica la nota de la dirección, con '←'.\n"
+"\n"
+"'←' = '\l'; '¬' = '\neg'; '∨' = '\or'; '∧' = '\and'; '→' = '\r' ; '↔' = '\lr'.\n"
+""
+msgstr ""
+
+#: Game
+msgid "Equivalencias e Inferencias"
+msgstr ""
+
+#: Game
+msgid "\n"
+"Este asistente te puede ayudar a resolver ejercicios de FMC por tu cuenta, sobre todo verificando que lo que estás haciendo está bien.\n"
+"\n"
+"En la mitad de la pantalla encontrarás "Mundos". Dale clic a las bolitas verdes que aparecen. Esas te llevarán a la introducción del mundo, y eventualmente a los ejercicios.\n"
+"\n"
+"Los dos mundos de este juego son Equivalencias e Inferencias.\n"
+""
+msgstr ""
+
+#: Game
+msgid "\n"
+"\n"
+""
+msgstr ""

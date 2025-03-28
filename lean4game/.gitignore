@@ -1,7 +1,0 @@
-node_modules
-client/dist
-games/*/my-game/build/
-games/*/my-game/lake-packages/
-games/*/my-game/.lake/
-server/.lake
-**/.DS_Store
